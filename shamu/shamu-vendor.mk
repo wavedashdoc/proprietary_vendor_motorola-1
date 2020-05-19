@@ -329,6 +329,7 @@ PRODUCT_PACKAGES += \
     DMConfigUpdate \
     HiddenMenu \
     TimeService \
+    Tycho \
     VZWAPNLib \
     atfwd \
     ims \
@@ -336,10 +337,12 @@ PRODUCT_PACKAGES += \
     BuaContactAdapter \
     CNEService \
     CQATest \
+    CarrierServices \
     ConnMO \
     DCMO \
     DMService \
     DiagMon \
+    GCS \
     LifetimeData \
     MotoSignatureApp \
     SprintDM \
