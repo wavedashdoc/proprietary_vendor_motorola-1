@@ -97,6 +97,16 @@ android_app_import {
 }
 
 android_app_import {
+	name: "Tycho",
+	owner: "motorola",
+	apk: "proprietary/app/Tycho/Tycho.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+}
+
+android_app_import {
 	name: "AppDirectedSMSProxy",
 	owner: "motorola",
 	apk: "proprietary/priv-app/AppDirectedSMSProxy/AppDirectedSMSProxy.apk",
@@ -111,6 +121,17 @@ android_app_import {
 	name: "BuaContactAdapter",
 	owner: "motorola",
 	apk: "proprietary/priv-app/BuaContactAdapter/BuaContactAdapter.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
+android_app_import {
+	name: "CarrierServices",
+	owner: "motorola",
+	apk: "proprietary/priv-app/CarrierServices/CarrierServices.apk",
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
@@ -177,6 +198,17 @@ android_app_import {
 	name: "DiagMon",
 	owner: "motorola",
 	apk: "proprietary/priv-app/DiagMon/DiagMon.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
+android_app_import {
+	name: "GCS",
+	owner: "motorola",
+	apk: "proprietary/priv-app/GCS/GCS.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
