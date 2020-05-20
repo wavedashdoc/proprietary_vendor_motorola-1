@@ -65,6 +65,17 @@ android_app_import {
 	},
 }
 
+
+android_app_import {
+	name: "Tycho",
+	owner: "motorola",
+	apk: "proprietary/app/Tycho/Tycho.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+}
+
 android_app_import {
 	name: "VZWAPNLib",
 	owner: "motorola",
@@ -94,16 +105,6 @@ android_app_import {
 		enabled: false,
        },
        privileged: true,
-}
-
-android_app_import {
-	name: "Tycho",
-	owner: "motorola",
-	apk: "proprietary/app/Tycho/Tycho.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
 }
 
 android_app_import {
@@ -209,7 +210,7 @@ android_app_import {
 	name: "GCS",
 	owner: "motorola",
 	apk: "proprietary/priv-app/GCS/GCS.apk",
-	certificate: "platform",
+	presigned: true,
 	dex_preopt: {
 		enabled: false,
 	},
